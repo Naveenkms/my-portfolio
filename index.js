@@ -1,5 +1,5 @@
 //========================= NAV-SECTION ====================
-// function to animate resume button
+//====== function to animate resume button ======
 const resumeBtn = document.querySelector(".span");
 // function definition
 const addYellow = () => {
@@ -11,13 +11,15 @@ const removeYellow = () => {
 }
 // function call
 // resumeBtn.onmouseover = animateBtn
-// function to show menubar on smallscreen
+
+
+//====== function to show menubar on smallscreen ======
 const menu = document.querySelector(".menu");
 const closeBtn = document.querySelector(".close");
 const hamburger = document.querySelector(".hamburger");
 // function definition
 const displayMenu = () => {
-  menu.classList.add("menu-transition")
+  menu.classList.add("menu-transition");
 }
 // function call
 hamburger.onclick = displayMenu;
@@ -28,5 +30,4 @@ const closeMenu = () => {
 }
 
 // function call
-
 closeBtn.onclick = closeMenu;

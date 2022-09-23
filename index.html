@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naveen Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ===================== header - navigation ========================s-->
-    <header>
-      <nav>
-        <div class="left-nav">
-          <div class="logo">
-            <img src="./assets/logo/color-logo.svg" alt="logo" />
-          </div>
-          <div class="email">
-            <a href="email:naveenkms2173@gmail.com">
-              <img class="nav-img" src="./assets/other-icons/email.png" />
-              naveenkms2173@gmail.com
-            </a>
-          </div>
-        </div>
 
-        <div class="right-nav">
-          <a href="#about">
-            <img class="nav-img" src="./assets/other-icons/about.png" />
-            About me
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveen Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===================== header - navigation ========================s-->
+  <header>
+    <nav>
+      <div class="left-nav">
+        <div class="logo">
+          <img src="./assets/logo/color-logo.svg" alt="logo" />
+        </div>
+        <div class="email">
+          <a href="mailto:naveenkms2173@gmail.com">
+            <img class="nav-img" src="./assets/other-icons/email.png" />
+            naveenkms2173@gmail.com
           </a>
-          <a href="#projects">
-            <img class="nav-img" src="./assets/other-icons/project.png" />
-            Projects
-          </a>
-          <a class="resume-button" onmouseenter="addYellow()" onmouseleave="removeYellow()" href=""> <span class="span"></span> Resume </a>
         </div>
+      </div>
 
-        <div class="hamburger">
-          <img src="./assets/other-icons/hamburger-menu.png">
-        </div>
-      </nav>
+      <div class="right-nav">
+        <a href="#about">
+          <img class="nav-img" src="./assets/other-icons/about.png" />
+          About me
+        </a>
+        <a href="#projects">
+          <img class="nav-img" src="./assets/other-icons/project.png" />
+          Projects
+        </a>
+        <a class="resume-button" onmouseenter="addYellow()" onmouseleave="removeYellow()" href=""> <span
+            class="span"></span> Resume </a>
+      </div>
 
-      <div class="menu">
-        <div>
+      <div class="hamburger">
+        <img src="./assets/other-icons/hamburger-menu.png">
+      </div>
+    </nav>
+
+    <div class="menu">
+      <div>
         <img class="close" src="./assets/other-icons/close.png">
       </div>
-        <ul>
-          <li>Email</li>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li><a class="resume-button" href=""> Resume </a></li>
-        </ul>
-      </div>
-    </header>
+      <ul>
+        <li><a href="mailto:naveenkms2173@gmail.com">Email</a></li>
+        <li>About Me</li>
+        <li>Projects</li>
+        <li><a class="resume-button" href=""> Resume </a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- ==================== main ==================== -->
-   
+  <!-- ================================ MAIN ======================= -->
+  <main>
+    <div class="container">
+      <!-- SECTION-HERO -->
+      <section id="hero">
+        <div class="container">
+          <div class="left-hero">
+            <h1>
+              <span>Hey,<br>
+                My name is</span> Naveen <span>&<br>
+                I'm a </span> Web Developer<span>.</span>
+            </h1>
 
-    <script src="./index.js"></script>
-  </body>
+            <div class="social-icons-container">
+              <div class="social-icon"><img src="./assets/social-icon/github.png"></div>
+              <div class="social-icon"><img src="./assets/social-icon/linkedin.png"></div>
+              <!-- <div></div> -->
+            </div>
+
+          </div>
+
+          <div class="right-hero">
+            <div class="profile-pic">
+              <img src="./assets/profile pic/profile.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <!-- <div class="social-icons-container">
+          <div class="social-icon"><img src="./assets/social-icon/github.png"></div>
+          <div class="social-icon"><img src="./assets/social-icon/linkedin.png"></div>
+          <div></div>
+        </div> -->
+      </section>
+    </div>
+  </main>
+
+  <!--====================== FOOTER =====================================-->
+  <script src="./index.js"></script>
+</body>
+
 </html>
