@@ -562,8 +562,8 @@ footer .logo img {
 
 @media (max-width: 650px) {
     
-    section {
-        margin: 0 auto 5rem;
+    section:not(:first-child) {
+        margin: 0 auto 10rem;
     }
 
     h2 {
@@ -597,8 +597,9 @@ footer .logo img {
     #hero {
         display: flex;
         align-items: center;
-       min-height: 100vh;
+       /* min-height: 100vh; */
         padding: 0;
+        margin: 5rem auto;
     }
 
     .hero-container h1 {
