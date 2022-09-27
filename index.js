@@ -1,3 +1,18 @@
+//========================= SCROLL ANIMATION ====================
+let observer = new IntersectionObserver( (entries) => {
+  entries.forEach( (entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show")
+    } 
+})
+}, {
+  threshold: 0.8
+})
+
+let target = document.querySelectorAll(".hidden");
+target.forEach( (el) => observer.observe(el))
+
+
 //========================= NAV-SECTION ====================
 //====== function to animate resume button ======
 const resumeBtn = document.querySelector(".span");

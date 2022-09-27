@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naveen Portfolio</title>
+  <title>Naveenkms</title>
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,10 +15,10 @@
   <header>
     <nav>
       <div class="left-nav">
-        <div class="logo">
+        <div class="logo animate-down">
           <img src="./assets/logo/black-logo.svg" alt="logo" />
         </div>
-        <div class="email">
+        <div class="email animate-down">
           <a href="mailto:naveenkms2173@gmail.com">
             <img class="nav-img" src="./assets/other-icons/email.png" />
             naveenkms2173@gmail.com
@@ -26,19 +27,19 @@
       </div>
 
       <div class="right-nav">
-        <a href="#about">
+        <a href="#about" class="animate-down">
           <img class="nav-img" src="./assets/other-icons/about.png" />
           About me
         </a>
-        <a href="#projects">
+        <a href="#projects" class="animate-down">
           <img class="nav-img" src="./assets/other-icons/project.png" />
           Projects
         </a>
-        <a class="resume-button" onmouseenter="addYellow()" onmouseleave="removeYellow()" href=""> <span
+        <a class="resume-button animate-down" onmouseenter="addYellow()" onmouseleave="removeYellow()" href=""> <span
             class="span"></span> Resume </a>
       </div>
 
-      <div class="hamburger">
+      <div class="hamburger animate-down">
         <img src="./assets/other-icons/hamburger-menu.png">
       </div>
     </nav>
@@ -49,8 +50,8 @@
       </div>
       <ul>
         <li><a href="mailto:naveenkms2173@gmail.com">Email</a></li>
-        <li>About Me</li>
-        <li>Projects</li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a class="resume-button" href=""> Resume </a></li>
       </ul>
     </div>
@@ -69,8 +70,8 @@
             </h1>
 
             <div class="social-icons-container">
-              <div class="social-icon"><img src="./assets/social-icon/github.png"></div>
-              <div class="social-icon"><img src="./assets/social-icon/linkedin.png"></div>
+              <div class="social-icon"><a href="https://github.com/Naveenkms"><img class="animate-down" src="./assets/social-icon/github.png"></a></div>
+              <div class="social-icon"><a href="https://www.linkedin.com/in/naveen-krishna-6796a61ba/"><img class="animate-down" src="./assets/social-icon/linkedin.png"></a></div>
             </div>
         </div>
 
@@ -79,7 +80,7 @@
 
       <!-- SECTION-ABOUT -->
       <div class="vertical-line-container">
-      <section id="about">
+      <section class="hidden" id="about">
         <div class="subheading">
           <div class="subheading-img">
             <img src="./assets/other-icons/about.png"/>
@@ -134,9 +135,9 @@
           <div class="project-container">
             <div class="left-project">
               <img src="./assets/other-icons/laptop.png">
-              <a href="https://covid-19-tracker-bd267.web.app/"><img src="./assets/project-img/COVID-19-TRACKER.png" /></a>
+              <a href="https://covid-19-tracker-bd267.web.app/"><img class="hidden" src="./assets/project-img/COVID-19-TRACKER.png" /></a>
             </div>
-            <div class="right-project">
+            <div class="right-project hidden">
               <div class="project-desc">
                 <div class="project-text">
                   Today, I got to learn many tools and techniques and my focus is using these to develop quality web applications.
@@ -154,9 +155,9 @@
           <div class="project-container">
             <div class="left-project">
               <img src="./assets/other-icons/laptop.png">
-              <a href="https://airbnb-clone-7hagopgt0-naveenkms.vercel.app/"><img src="./assets/project-img/airbnb-clone.png" /></a>
+              <a href="https://airbnb-clone-7hagopgt0-naveenkms.vercel.app/"><img class="hidden" src="./assets/project-img/airbnb-clone.png" /></a>
             </div>
-            <div class="right-project">
+            <div class="right-project hidden">
               <div class="project-desc">
                 <div class="project-text">
                   Today, I got to learn many tools and techniques and my focus is using these to develop quality web applications.
@@ -174,9 +175,9 @@
           <div class="project-container">
             <div class="left-project">
               <img src="./assets/other-icons/laptop.png">
-              <a href="https://warm-sierra-97505.herokuapp.com/"><img src="./assets/project-img/TODOLIST-APP.png" /></a>
+              <a href="https://warm-sierra-97505.herokuapp.com/"><img class="hidden" src="./assets/project-img/TODOLIST-APP.png" /></a>
             </div>
-            <div class="right-project">
+            <div class="right-project hidden">
               <div class="project-desc">
                 <div class="project-text">
                   Today, I got to learn many tools and techniques and my focus is using these to develop quality web applications.
@@ -194,9 +195,9 @@
           <div class="project-container">
             <div class="left-project">
               <img src="./assets/other-icons/laptop.png">
-              <a href=""><img src="./assets/project-img/MY-PORTFOLIO.png" /></a>
+              <a href=""><img class="hidden" src="./assets/project-img/MY-PORTFOLIO.png" /></a>
             </div>
-            <div class="right-project">
+            <div class="right-project hidden">
               <div class="project-desc">
                 <div class="project-text">
                   Today, I got to learn many tools and techniques and my focus is using these to develop quality web applications.
@@ -217,19 +218,19 @@
   <!--====================== FOOTER =====================================-->
   <footer>
     
-      <h2>Stay Connected</h2>
+      <h2 class="hidden">Stay Connected</h2>
 
       <div class="social-icons">
-        <a href="https://github.com/Naveenkms"><img class="social-icon" src="./assets/social-icon/github.png" alt="Github icon"></a>
+        <a href="https://github.com/Naveenkms"><img class="social-icon hidden" src="./assets/social-icon/github.png" alt="Github icon"></a>
         
-        <a href="https://www.linkedin.com/in/naveen-krishna-6796a61ba/"><img class="social-icon" src="./assets/social-icon/linkedin.png" alt="Linkedin icon"></a>
+        <a href="https://www.linkedin.com/in/naveen-krishna-6796a61ba/"><img class="social-icon hidden" src="./assets/social-icon/linkedin.png" alt="Linkedin icon"></a>
       </div>
 
-      <div class="copyright">
+      <div class="copyright hidden">
        <p>© Naveenkms 2022</p> 
       </div>
 
-      <div class="logo">
+      <div class="logo hidden">
         <img src="./assets/logo/black-logo.svg" alt="logo" />
       </div>
   </footer>

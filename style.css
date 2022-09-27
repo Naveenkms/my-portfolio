@@ -74,7 +74,79 @@ ul {
     list-style: none;
 }
 
+/*=================== ANIMATION CLASSES ==============*/
+/* .hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
 
+.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+.animate-down {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: animate-down 1s ease-out forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    animation: display 1s ease-out forwards;
+}
+
+.left-nav div:nth-child(2),
+footer .social-icon:first-child
+{
+    animation-delay: 200ms;
+}
+
+.right-nav a:first-child,
+.hamburger,
+footer .social-icon:nth-child(2)
+{
+    animation-delay: 400ms;
+}
+
+.right-nav a:nth-child(2),
+footer div:not(:first-child)
+{
+   animation-delay:  600ms;
+}
+
+.right-nav a:nth-child(3)
+{
+    animation-delay: 800ms;
+}
+
+/* .social-icons-container .social-icon:first-child {
+    transition-delay: 1s;
+}
+
+.social-icons-container .social-icon:nth-child(2) {
+    transition-delay: 1.2s;
+} */
+@keyframes animate-down {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes display {
+    to {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+/* #hero .vertical-line {
+    transition-delay: 1.6s;
+} */
 
 
 
@@ -209,12 +281,14 @@ nav {
 .menu div:first-child {
     display: flex;
     justify-content: end;
-    padding: 1em 1.56em 0;
+    align-items: center;
+    height: 5rem;
+    padding: 0 1.56em;
     cursor: pointer;
 }
 
 .close {
-    width: 1.56em;
+    width: 1.5em;
 }
 
 .menu ul {
@@ -259,7 +333,11 @@ nav {
     font-weight: 700;
     font-size: clamp(30px, 7vw, 90px);
     line-height: 1.5;
+    opacity: 0;
+    animation: display 1s ease-out 1.2s forwards;
 }
+
+
 
 .hero-container h1 span {
     color: #ffffff;
@@ -292,8 +370,10 @@ nav {
 .social-icon img {
     width: 100%;
     filter: invert(92%) sepia(42%) saturate(7467%) hue-rotate(316deg) brightness(110%) contrast(102%);
-
+    animation-delay: 1.4s;
+    /* animation: display 1s ease-out 1.4s forwards; */
 }
+
 
 #hero .vertical-line {
     position: absolute;
@@ -302,7 +382,8 @@ nav {
     width: 0.2rem;
     height: 13rem;
     background-color: var(--yellow);
-    
+    opacity: 0;
+    animation: display 1s ease-out 1.6s forwards;
 }
 
 
@@ -429,6 +510,7 @@ nav {
     width: 100%;
     height: 100%;
 }
+
 .left-project a  {
     position: absolute;
     left: 50%;
@@ -443,8 +525,13 @@ nav {
     height: 100%;
 }
 
+.left-project a img:hover {
+    opacity: 0.5;
+}
+
 .right-project {
     margin-top: 1rem;
+    transform: translateX(-25%);
 }
 
 .project-desc {
