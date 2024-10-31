@@ -68,7 +68,6 @@ ul {
 }
 
 
-/*=================== HEADER ==============*/
 header {
     position: sticky;
     top: 0;
@@ -291,7 +290,6 @@ nav {
 }
 
 
-/*================= SECTION-ABOUT =====================*/
 #about {
     max-width: 50vw;
     font-size: 18px;
@@ -356,7 +354,6 @@ nav {
 
 
 
-/*================= SECTION-PROJECTS =====================*/
 .project-container {
     display: flex;
     align-items: center;
@@ -436,7 +433,6 @@ nav {
 }
 
 
-/*================= FOOTER =====================*/
 footer {
     display: flex;
     flex-direction: column;
@@ -469,7 +465,6 @@ footer .logo img {
 }
 
 
-/*======================== MEDIA QUERIES ===========================  */
 @media(max-width: 960px) {
 header {
         font-size: 10px;
@@ -594,7 +589,6 @@ header {
 }
 
 
-/*=================== ANIMATION ==============*/
 .animate-down  {
     opacity: 0;
     transform: translateY(-100%);
